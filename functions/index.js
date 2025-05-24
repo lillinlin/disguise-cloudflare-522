@@ -88,7 +88,7 @@ export async function onRequest(context) {
   // 获取用户的城市信息，默认值为 'Unknown Location'
   const userCity = context.request.cf && context.request.cf.city 
     ? cityMapping[context.request.cf.city] || context.request.cf.city 
-    : 'Los Angeles';
+    : 'China';
 
   const rewriter = new HTMLRewriter()
     .on('header div.mt-3', {
